@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cool</title>
+</head>
+<body>
+<div id="app">
+    <p>
+        <label for="name">Name: </label>
+
+        <input type="text" name="name" v-model="name" id="name" placeholder="insert name here"/>
+    <div>{{nameError}}</div>
+
+    </p>
+
+    <label for="email">Email: </label>
+    <input type="text" name="email" v-model="email" id="email" placeholder="insert email here"/>
+    <div>{{emailError}}</div>
+
+    <br>
+
+    <button type="submit" v-on:click="validate">Submit</button>
+    <div>{{submit}}</div>
+
+</div>
+
+
+<br>
+
+<button class="clicker">Code Names</button>
+<div class="main"></div>
+<div class="number"></div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="cool.js"></script>
+
+
+</body>
+</html>
